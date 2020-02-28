@@ -1,0 +1,103 @@
+body::after {
+    content: "";
+    background: url("texture.png");
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position-x: 100%;
+    opacity: 0.4;
+    filter:blur(2px);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+    animation-name:example ;
+    animation-duration: 1s; 
+}
+
+.storyTitle{
+    margin-left:20%;
+    font-family: 'Brush Script MT';
+    font-size: 42px;
+    color: #FF2B68;
+}
+
+.loginForm, .registerForm{
+    margin: auto;
+    animation-name:example ;
+    animation-duration: 1s;
+}
+
+h2{
+    font-family: 'Gabriola';
+    color: #FF2B68;
+    font-weight: bold;    
+    font-size: 40px;
+    /* text-align: center; */
+    padding:10px;
+}
+
+label{
+    font-family: 'Gabriola';
+    font-size: 24px;
+    color:#FB7C39;
+    font-weight:bold;
+    margin-top: 5px;
+}
+
+form{
+    padding:10px;
+}
+
+input[type=email],input[type=password],input[type="text"]{
+    border: 1px solid #bebdbd;
+    border-radius: 5px;
+    width:70%;
+    padding: 5px;
+}
+
+button{
+   color: white;
+   font-family: 'Gabriola';
+   background-color: #FB7C39;
+   border: 2px solid #FB7C39;
+   border-radius: 5px;
+   font-size: 20px;
+   margin-top:20px;
+   width:20%;
+   margin-right: 30%;
+   clear: both;
+   float: right;
+}
+
+button:hover{
+    background-color: #FF2B68;
+    border: 2px solid #FF2B68;
+    border-radius: 5px;
+}
+
+.registerLink, .loginLink{
+    color: #FB7C39;
+    font-family: 'Gabriola';
+}
+
+.im{
+    animation-name: example1;
+    animation-duration: 2s;
+    margin-top:100px;
+}
+
+a{
+    color: #FB7C39; 
+}
+
+
+@keyframes example {
+    from {transform: translate(200px, 0px);}
+    to {transform: translate(0px, 0px);}
+}
+@keyframes example1 {
+    from {transform: translate(-200px, 0px);}
+    to {transform: translate(0px, 0px);}
+}

@@ -1,0 +1,148 @@
+body{
+    background-image: url("read_bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+
+.navv{
+    list-style-type: none;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    top:0;
+    font-family: 'Gabriola';
+    font-size: 24px;
+    color: #FB7C39;
+    box-shadow:0px 3px 8px 0px rgb(197, 196, 196);
+    overflow: hidden;
+    z-index: 1;
+}
+li{
+    float:right;
+    padding: 0px;
+    /* padding:5px 8px 2px 8px; */
+    margin-left: 0px;
+    background-color: white;
+}
+li:hover{
+  background-color: #FB7C39;
+  color: white;
+}
+.navtitle{
+    font-family: 'Brush Script MT';
+    color: #FF2B68;
+    float: left;
+    padding:3px;
+    margin:0px;
+}
+li img{
+  border-radius: 15px;
+}
+li a{
+    color: #FB7C39;
+    text-decoration: none;
+    display: block;
+    padding:5px 8px 2px 8px;  
+}
+li a:hover,.active{
+    color: white;
+    text-decoration: none;
+    background-color: #FB7C39;
+}
+.s_title{
+    margin:auto;
+    font-family: 'Gabriola';
+    font-size:38px;
+    font-weight: bold;
+    color: rgb(27, 72, 155);
+}
+
+.part_div{
+    margin-top: 60px;  
+    background-color: rgba(255,255,255,0.9);  
+    border-radius: 5px;
+    padding:20px;
+}
+
+.part_title{
+    color: rgb(27, 72, 155);
+    font-size:18px;
+}
+
+.comment_area{
+    border-radius: 5px;
+    border:solid 1px grey;
+}
+
+.comment_btn{
+    background-color: #FB7C39;
+    color:white;
+    border:2px solid #FB7C39;
+    border-radius:10px;
+    padding-left:10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-right:10px;
+    /* font-family:'Gabriola'; */
+    font-size:16px;
+}
+.comment_btn:hover{
+    background-color: rgb(204, 83, 18);
+    border:2px solid rgb(204, 83, 18);
+}
+.disp_cmt{
+    margin-top: 10px;
+    padding:5px;
+}
+.cmt_name{
+    margin:0px;
+    color:#FB7C39;
+    font-size: 18px;
+    font-family: 'Gabriola';
+    padding:0px;
+}
+.cmt_date{
+    margin:0px;
+    color:#FB7C39;
+    font-size: 12px;
+    font-weight: bold;
+}
+.cmt_content{
+    margin:0px;
+    font-size:14px;
+}
+
+.pager_btn{
+    float:left;
+    text-decoration: none;
+    padding:2px 8px;
+    background-color: #FB7C39;
+    color: white;
+  
+}
+.pager_btn:hover{
+    text-decoration: none;
+    color: white;
+}
+
+button{
+   color: white;
+   font-family: 'Gabriola';
+   background-color: #FB7C39;
+   border: 2px solid #FB7C39;
+   border-radius: 5px;
+   font-size: 20px;
+   margin-top:20px;
+   
+   margin-right: 30%;
+   clear: both;
+   float: right;
+}
+
+button:hover{
+    background-color: #fa6516;
+    border: 2px solid #fa6516;
+    border-radius: 5px;
+}

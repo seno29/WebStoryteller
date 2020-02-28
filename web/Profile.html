@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS_Styles/profile.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-----------------------Navigation Bar------------------------------>
+    <ul class="navv">
+        <p style="float: left;margin:0px;padding: 2px;"><img src="Images/pic1.png" width="25" height="28"></p>
+        <p class="navtitle">The Storyteller</p>
+        <li><a href="">Logout</a></li>
+        <li><a href="Profile.html" class="active">My Profile</a></li>
+        <li><a href="WriteStory.html">Write A Story</a></li>
+        <li><a href="">Search</a></li>
+        <li><a href="">Home</a></li>
+    </ul>
+<div class="container-fluid">
+    <div class="row profile_head">
+        <div class="col-sm-12">    
+            <div class="row intro">
+                <div class="col-sm-2">
+                    <img src="Images/flat.png" height="100" width="100" style="float:right;">
+                </div>
+                <div class="col-sm-6 into_col">
+                    <p class="pro_name">Diksha Gupta</p>
+                    <p class="pro_bio">writer by nature is a dreamer - "a conscious dreamer"</p>
+                    <a href="EditProfile.html" class="intro_col_a">Edit Profile</a>
+                </div>
+                <div class="col-sm-4 into_col">
+                     <span class="intro_col_a" onclick="document.getElementById('myModalId').style.display='block';">Followers: 40</span>
+                     <span class="intro_col_a" onclick="document.getElementById('following_id').style.display='block';">Following: 30</span>
+                     <a href="Drafts.html" class="intro_col_a">My Drafts</a>
+                </div>
+            </div>          
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <p style="margin-top:50px;margin-left:20%;font-family:'Gabriola';font-size:28px;color:#FB7C39;padding:0px;" >Your Stories:</p>
+   <div class="my_container">
+    <p style="margin-top:50px;margin-left:20%;font-family:'Gabriola';font-size:28px;color:#FB7C39;padding:0px;" >Your Stories:</p>
+    
+         <div class="feeds_div">
+            
+            <div class="row story_card">
+                <div class="col-sm-3">
+                    <img class="img-thumbnail cover_pic" src="getImage.jsp?id=<%=sobj.getSid()%>" alt="No image" style="border: 0px solid red;">
+                </div>
+
+                <div class="col-sm-9">
+                    <h4 style="margin:0px;"></h4>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            Author:<a href=""> </a>
+                        </div>
+                        <div class="col-sm-3">
+                            Theme: 
+                        </div>
+                        <div class="col-sm-3">
+                            No of Parts: 
+                        </div>
+                        <div class="col-sm-3 story_date">
+                            
+                        </div>
+                    </div>
+                    <hr style="margin:10px 0px 10px 0px">
+
+                    <div class="desc">
+                        
+                    </div>
+                    <hr style="margin:10px 0px 10px 0px;">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            
+                            <button  class="icon_btn" id="Add" style="background-color:white;color:black;border-radius:5px;" onclick="loadLibrary('')" >
+                                <img class="t_img" src="Images\bookmark.png" width="25" height="25" style="animation-duration:1s">
+                                <span id=""></span>
+                            </button>
+                            
+                            <button class="icon_btn"    style="border-radius:5px;color:black" onclick="loadRating()">
+                                <img  src="Images\thumb2.png" width="25" height="25"  style="animation-duration:1s">
+                                <span ></span>
+                            </button>
+                            
+                            <button class="action_btn" ><a class="r_link" href="startReading.jsp?SID=&stitle=" style="color:white;" > Start Reading </a></button>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+      
+    </div>
+</div>
+
+</div>
+
+<div class="follower_modal" id="myModalId">
+    
+    <div class="modal_content animate" >
+        <span class="close" onclick="document.getElementById('myModalId').style.display='none';">&times</span>
+        <center><h4>Followers</h4></center>
+        
+        <ul>
+            
+            <li>
+                <img src="Images/flat.png" width="50" height="50">
+                <span>Diksha Gupta</span>
+            </li>
+            
+        </ul>   
+    </div>
+</div>
+<div class="follower_modal" id="following_id">
+    
+    <div class="modal_content animate" >
+        <span class="close" onclick="document.getElementById('following_id').style.display='none';">&times</span>
+        <center><h4>Following</h4></center>
+        
+        <ul>
+            <li>
+                <img src="Images/flat.png" width="50" height="50">
+                <span>Diksha Gupta</span>
+            </li>
+            <li>
+                <img src="Images/flat.png" width="50" height="50">
+                <span>Diksha Gupta</span>
+            </li>
+            <li>
+                <img src="Images/flat.png" width="50" height="50">
+                <span>Diksha Gupta</span>
+            </li>
+        </ul>   
+    </div>
+</div>
+
+
+    </body>
+</html>

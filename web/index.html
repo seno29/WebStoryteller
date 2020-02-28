@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS_Styles/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-----------------------Navigation Bar------------------------------>
+    <!-- <img class="bgrnd" src="Images/Colorful-Geometric-Backgrounds-PNG.png"> -->
+    <ul class="navv">
+        <p style="float: left;margin:0px;padding: 2px;"><img src="Images/pic1.png" width="25" height="28"></p>
+        <p class="navtitle">The Storyteller</p>
+        <li><a href="">Logout</a></li>
+        <li><a href="Profile.html">My Profile</a></li>
+        <li><a href="WriteStory.html">Write A Story</a></li>
+        <li><a href="" class="active">Home</a></li>
+		<div class="" style="width:500px;margin-left:350px;margin-top:5px;">
+            <form>
+                <input type="text" name="s_qry" style="height:30px;width:350px;padding:0px;border:1px solid lightgrey;border-radius:5px;">
+               <!-- <button type="submit" style="height:30px"><i class="fa fa-search"></i></button>-->
+			   <input type="submit" style="width:100px;margin-left:0px;border-radius:5px;" value="Search">
+            </form>
+		</div>
+    </ul>
+    <div class="my_container">
+        <!-- <div class="row" style="margin-top: 70px;overflow-x: hidden;"> -->
+        <div class="filter_div">
+            <h4 id="filter">Filter</h4>
+            <p class="title_chk">According to Theme:</p>
+
+            <div class="div_chk">
+                <input type="checkbox" name="horror" value="horror"> Horror<br>
+                <input type="checkbox" name="comedy" value="comedy"> Comedy<br>
+                <input type="checkbox" name="mystery" value="mystery"> Mystery<br>
+                <input type="checkbox" name="thriller" value="thriller"> Thriller<br>
+                <input type="checkbox" name="romance" value="romance"> Romance<br>
+            </div>
+
+            <br>
+            <p class="title_chk">According to Rating:</p>
+            <div class="div_chk">
+                <input type="checkbox" name="most_popular" value="most_popular">Most Popular<br>
+                <input type="checkbox" name="avg" value="avg">Average<br>
+                <input type="checkbox" name="least_popular" value="least_popular">Least Popular<br>
+            </div>
+            <br>
+            <p class="title_chk">According to date:</p>
+            From:<br><input type="date" name="from"><br>
+            To:<br><input type="date" name="to"><br><br>
+
+            <input type="submit" value="Apply">
+        </div>
+        <div class="feeds_div">
+            <div class="row story_card">
+                <div class="col-sm-3">
+                    <img class="img-thumbnail cover_pic" src="Images/haunted house.jpg" style="border: 0px solid red;">
+                </div>
+
+                <div class="col-sm-9">
+                    <h4 style="margin:0px;">The Haunted House</h4>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            Author:<a href=""> Diksha Gupta</a>
+                        </div>
+                        <div class="col-sm-3">
+                            Theme: Horror
+                        </div>
+                        <div class="col-sm-3">
+                            No of Parts: 2
+                        </div>
+                        <div class="col-sm-3 story_date">
+                            03-Dec-2019
+                        </div>
+                    </div>
+                    <hr style="margin:0">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <img src="Images/view.png" class="icon_small" width="20" height="20">
+                            <p class="count_disp"> 23</p>
+                        </div>
+                        <div class="col-sm-2">
+                            <img src="Images/star.png" width="20" height="20" class="icon_small">
+                            <p class="count_disp"> 21</p>
+                        </div>
+                        <div class="col-sm-2">
+                            <img src="Images/Menu.png" width="20" height="20" class="icon_small">
+                            <p class="count_disp"> 13</p>
+                        </div>
+                        <div class="col-sm-6">                           
+                            <a href="" class="star_icon"> ♥</a>
+                        </div>
+
+                    </div>
+                    <p class="desc">
+                        The house's reputation for being haunted has caused it to become "an avoided house," 
+                        and although the narrator decides to rent it for six months (from October to March) 
+                        and live there with his spinster sister (Patty), they cannot retain any servants due 
+                        to a plethora of bizarre house noises. Therefore, by mid-November, Patty suggests that
+                         she and John "take the house wholly and solely into our own hands" and live without
+                          servants, with the exception of Bottles the stable-man who is deaf and therefore not 
+                          bothered by the haunted noises. Patty further suggests that they invite a group of friends 
+                        to come down and form a "Society" that would occupy the house for three
+                         months and "see what happens" as far as supern
+                    </p>
+                    <div class="row">
+                        <div class="col-sm-12">
+                          <button class="action_btn"  style="background-color:white;" id="bt" onclick="fun()" ><img id="t_img" src="Images\thumb2.png" width="25" height="25" style="animation-duration:1s"></button>                            
+                            <button class="action_btn" ><a href="" class="read_link"> Start Reading </a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row story_card">
+                <div class="col-sm-3">
+                    <img class="img-thumbnail cover_pic" src="Images/haunted house.jpg" style="border: 0px solid red;">
+                </div>
+
+                <div class="col-sm-9">
+                    <h4 style="margin:0px;">The Haunted House</h4>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            Author:<a href=""> Diksha Gupta</a>
+                        </div>
+                        <div class="col-sm-3">
+                            Theme: Horror
+                        </div>
+                        <div class="col-sm-3">
+                            No of Parts: 2
+                        </div>
+                        <div class="col-sm-3 story_date">
+                            03-Dec-2019
+                        </div>
+                    </div>
+                    <hr style="margin:0">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <img src="Images/view.png" class="icon_small" width="20" height="20">
+                            <p class="count_disp"> 23</p>
+                        </div>
+                        <div class="col-sm-2">
+                            <img src="Images/star.png" width="20" height="20" class="icon_small">
+                            <p class="count_disp"> 21</p>
+                        </div>
+                        <div class="col-sm-2">
+                            <img src="Images/Menu.png" width="20" height="20" class="icon_small">
+                            <p class="count_disp"> 13</p>
+                        </div>
+                    </div>
+                    <p class="desc">
+                        The house's reputation for being haunted has caused it to become "an avoided house," 
+                        and although the narrator decides to rent it for six months (from October to March) 
+                        and live there with his spinster sister (Patty), they cannot retain any servants due 
+                        to a plethora of bizarre house noises. Therefore, by mid-November, Patty suggests that
+                         she and John "take the house wholly and solely into our own hands" and live without
+                          servants, with the exception of Bottles the stable-man who is deaf and therefore not 
+                          bothered by the haunted noises. Patty further suggests that they invite a group of friends 
+                        to come down and form a "Society" that would occupy the house for three
+                         months and "see what happens" as far as supern
+                    </p>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <button class="action_btn" style="width:30px">+</button>
+                            <button class="action_btn" style="width:120px"> Start Reading </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <div class="row story_card">
+                <div class="col-sm-3">
+                    <img class="img-thumbnail cover_pic" src="Images/haunted house.jpg" style="border: 0px solid red;">
+                </div>
+
+                <div class="col-sm-9">
+                    <h4 style="margin:0px;">The Haunted House</h4>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            Author:<a href=""> Diksha Gupta</a>
+                        </div>
+                        <div class="col-sm-3">
+                            Theme: Horror
+                        </div>
+                        <div class="col-sm-3">
+                            No of Parts: 2
+                        </div>
+                        <div class="col-sm-3 story_date">
+                            03-Dec-2019
+                        </div>
+                    </div>
+                    <hr style="margin:0">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <img src="Images/view.png" class="icon_small" width="20" height="20">
+                            <p class="count_disp"> 23</p>
+                        </div>
+                        <div class="col-sm-2">
+                            <img src="Images/star.png" width="20" height="20" class="icon_small">
+                            <p class="count_disp"> 21</p>
+                        </div>
+                        <div class="col-sm-2">
+                            <img src="Images/Menu.png" width="20" height="20" class="icon_small">
+                            <p class="count_disp"> 13</p>
+                        </div>
+                    </div>
+                    <p class="desc" >
+                        The house's reputation for being haunted has caused it to become "an avoided house," 
+                        and although the narrator decides to rent it for six months (from October to March) 
+                        and live there with his spinster sister (Patty), they cannot retain any servants due 
+                        to a plethora of bizarre house noises. Therefore, by mid-November, Patty suggests that
+                         she and John "take the house wholly and solely into our own hands" and live without
+                          servants, with the exception of Bottles the stable-man who is deaf and therefore not 
+                          bothered by the haunted noises. Patty further suggests that they invite a group of friends 
+                        to come down and form a "Society" that would occupy the house for three
+                         months and "see what happens" as far as supern
+                    </p>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <button class="action_btn" style="width:30px">+</button>
+                            <button class="action_btn" style="width:120px"> Start Reading </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+        </div>     
+    </div>
+    <script>
+	function fun(){
+		var img = document.getElementById("t_img");
+		img.style.animationName="btn_anim";
+		setTimeout(function(){ img.style.animationName="none";}, 1200);
+	}
+	</script>
+        
+    
+</body>
+
+</html>

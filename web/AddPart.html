@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Part</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS_Styles/addPart.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-----------------------Navigation Bar------------------------------>
+    <!-- <img class="bgrnd" src="Images/Colorful-Geometric-Backgrounds-PNG.png"> -->
+    <ul class="navv">
+        <p style="float: left;margin:0px;padding: 2px;"><img src="Images/pic1.png" width="25" height="28"></p>
+        <p class="navtitle">The Storyteller</p>
+        <li><a href="">Logout</a></li>
+        <li><a href="Profile.html">My Profile</a></li>
+        <li><a href="WriteStory.html"  class="active">Write A Story</a></li>
+        <li><a href="">Search</a></li>
+        <li><a href="">Home</a></li>
+    </ul>
+
+    <div class="container-fluid">
+        <p class="title">Start writing your own masterpiece</p>
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="Images/girlonbooks.jpg" height="325" width="200">
+            </div>
+            <div class="col-sm-6">
+                <form>
+                    <label><b>Part Title: </b></label>
+                    <input type="text" name="ptitle"><br><br>                   
+                    <label>Select an image:</label>
+                    <input type="file">
+                    <br><br>
+                    <label><b>Part Content:</b></label><br>
+                    <input type="hidden" name="partContent" id="pdesc">
+                    <div id="fTextArea" contenteditable="true"></div>
+                    <button type="submit" >+Add Another Part</button>
+                    <button type="submit">Save Draft</button>
+                    <button type="submit">Publish</button>
+                </form>
+            </div> 
+            <div class="col-sm-3"></div>  
+        </div>
+    </div>
+
+</body>
+</html>

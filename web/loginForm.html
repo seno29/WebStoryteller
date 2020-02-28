@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Login to get started</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="CSS_Styles/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="CSS_Styles/loginCSS.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-7 im">
+                    <img id="logo" src="Images/pic1.png" width="400" height="400"> 
+                    <p class="storyTitle">The Storyteller</p>                   
+                </div>
+                <div class="col-sm-5 loginForm">
+                    <h2>It's good to see you again!!!</h2>
+                    <form method="post" action="LoginServlet">
+                        <label>Email:</label><br>
+                        <input type="email" name="email" ><br>
+                        <label>Password:</label><br>
+                        <input type="password" name="pass"><br>
+                        <button type="submit" class="submitBtn">Login</button>   
+                    </form>
+                    <h4 class="registerLink">Don't have an account? <a href="registerForm.html"><u>Register</u></a></h4>
+                </div>
+            </div>
+        </div>
+    </body>    
+</html>

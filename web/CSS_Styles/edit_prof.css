@@ -1,0 +1,121 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 18, 2020, 12:14:47 PM
+    Author     : golu
+*/
+body::after {
+    content: "";
+    background: url("texture.png");
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position-x: 100%;
+    opacity: 0.4;
+    filter:blur(2px);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: -1; 
+    animation-name:example ;
+    animation-duration: 1s; 
+}
+
+@keyframes example {
+    from {transform: translate(200px, 0px);}
+    to {transform: translate(0px, 0px);}
+}
+.navv{
+    list-style-type: none;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    top:0;
+    font-family: 'Gabriola';
+    font-size: 24px;
+    color: #FB7C39;
+    box-shadow:0px 3px 8px 0px rgb(197, 196, 196);
+    overflow: hidden;
+    z-index: 1;
+}
+li{
+    float:right;
+    padding: 0px;
+    /* padding:5px 8px 2px 8px; */
+    margin-left: 0px;
+    background-color: white;
+}
+li:hover{
+  background-color: #FB7C39;
+  color: white;
+}
+.navtitle{
+    font-family: 'Brush Script MT';
+    color: #FF2B68;
+    float: left;
+    padding:3px;
+    margin:0px;
+}
+li img{
+  border-radius: 15px;
+}
+li a{
+    color: #FB7C39;
+    text-decoration: none;
+    display: block;
+    padding:5px 8px 2px 8px;  
+}
+li a:hover,.active{
+    color: white;
+    text-decoration: none;
+    background-color: #FB7C39;
+}
+.title{
+    margin-top: 50px;
+    font-family: 'Gabriola';
+    font-size: 28px;
+    color:#FB7C39;
+    padding:10px;
+}
+label{
+   color:#FB7C39;
+   font-family: 'Gabriola';
+   font-size:22px;
+   width:30%; 
+}
+
+input[type="text"],input[type="email"],input[type="password"]{
+    border-radius: 5px;
+    border:1px solid lightgrey;
+    width: 60%;
+}
+
+input[type="file"]{
+    width: 60%;
+    border:1px solid lightgrey;
+}
+button{
+    color: white;
+    font-family: 'Gabriola';
+    background-color: #FB7C39;
+    border: 2px solid #FB7C39;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 10px;
+    float: right;
+    margin-right:50px;
+ }
+ 
+ button:hover{
+     background-color: rgb(57, 84, 238);
+     border: 2px solid rgb(57, 84, 238);
+     border-radius: 5px;
+ }
+
+ #chng_pass:hover{
+     text-decoration:none;
+ }
